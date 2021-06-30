@@ -188,7 +188,7 @@ class _QRViewExampleState extends State<QRViewExample> {
           }
         }
         if (testName.isNotEmpty) {
-          await TestDAO.create(testName, null, testDate, testStatus, null,
+          await TestDAO.create(testName, '', testDate, testStatus, null,
               User.loggedInUser.userDbId, null);
         }
         await Navigator.of(context).push(MaterialPageRoute(
